@@ -1,0 +1,306 @@
+{
+ "geoms": {
+ "geom1_point_bootstrapPlot": {
+ "geom": "point",
+"classed": "geom1_point_bootstrapPlot",
+"aes": {
+ "x": "val",
+"y": "y",
+"colour": "type",
+"clickSelects": "type",
+"showSelected1": "iteration",
+"showSelected2": "type" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "iteration", "type" ],
+"clickSelects": "type",
+"help_showSelected": [ "iteration", "type" ],
+"help_clickSelects": "type" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_bootstrapPlot": {
+ "geom": "point",
+"classed": "geom2_point_bootstrapPlot",
+"aes": {
+ "x": "mean_val",
+"y": "1.2",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"colour": "#FF0000",
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "iteration",
+"ms":     1000,
+"sequence": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+},
+"selectors": {
+ "type": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"clickSelects": true,
+"showSelected": true,
+"selected": [ "Original", "Bootstrap" ],
+"levels": [ "Original", "Bootstrap" ],
+"update": [
+ "geom1_point_bootstrapPlot" 
+] 
+},
+"iteration": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"selected": "0",
+"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom1_point_bootstrapPlot",
+"geom2_point_bootstrapPlot" 
+] 
+} 
+},
+"plots": {
+ "bootstrapPlot": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "type": {
+ "guide": "legend",
+"geoms": "point",
+"title": "type",
+"class": "type",
+"selector": "type",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Bootstrap" 
+},
+{
+ "pointcolour": "#00BFC4",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Original" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        6,
+       8,
+      10,
+      12 
+] 
+],
+"y": [
+ [
+        1,
+    1.05,
+     1.1,
+    1.15,
+     1.2 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        6,
+       7,
+       8,
+       9,
+      10,
+      11,
+      12,
+      13 
+] 
+],
+"y": [
+ [
+        1,
+   1.025,
+    1.05,
+   1.075,
+     1.1,
+   1.125,
+    1.15,
+   1.175,
+     1.2 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        6,
+       8,
+      10,
+      12 
+],
+"xlab": [
+ "6",
+"8",
+"10",
+"12" 
+],
+"xrange": [ 5.691413, 13.94918 ],
+"xline": true,
+"xticks": true,
+"y": [
+        1,
+    1.05,
+     1.1,
+    1.15,
+     1.2 
+],
+"ylab": [
+ "1.00",
+"1.05",
+"1.10",
+"1.15",
+"1.20" 
+],
+"yrange": [     0.99,     1.21 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Value",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Distribution",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "6",
+"8",
+"10",
+"12" 
+],
+"ylabs": [
+ "1.00",
+"1.05",
+"1.10",
+"1.15",
+"1.20" 
+],
+"title": "Bootstrap Sampling Animation",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_point_bootstrapPlot",
+"geom2_point_bootstrapPlot" 
+] 
+} 
+},
+"source": "https://github.com/NandaniAggarwal/animint_R/blob/main/bootstrapping.R",
+"title": "Bootstrap Sampling Animation" 
+}
